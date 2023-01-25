@@ -74,6 +74,7 @@ int main()
 
 	Vector3d flyTo = position.Add(movement);
 	Vector3d movementTo = position.Add(movement.Minus(gravity)); //Very complex to interpret.
+	Vector3d headTo = position.Add(movement.Add(gravity));//Very complex to interpret.
 
 	//Class for processes needed across objects.
 	Utility u;
